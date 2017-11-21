@@ -2,20 +2,21 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>乐淘管理系统首页</title>
+    <title>乐淘管理系统-二级分类</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
     <link rel="stylesheet" href="lib/nprogress/nprogress.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
-<!--侧边栏黑马15期-->
+
+<!--侧边栏-->
 <div class="lt_aside">
     <div class="brand">
         <a href="index.html">黑马15期</a>
     </div>
     <div class="user">
-        <img src="images/default.png">
+        <img src="images/default.png" alt="">
         <p>超级管理员</p>
     </div>
     <div class="nav">
@@ -31,9 +32,9 @@
                     <span class="glyphicon glyphicon-list"></span>
                     分类管理
                 </a>
-                <div class="child" style="display: none">
+                <div class="child" style="display: block">
                     <a href="first.html">一级分类</a>
-                    <a href="second.html">二级分类</a>
+                    <a class="now" href="second.html">二级分类</a>
                 </div>
             </li>
             <li>
@@ -42,20 +43,16 @@
                     商品管理
                 </a>
             </li>
+
         </ul>
     </div>
 </div>
-
 <!--主体区-->
 <div class="lt_main">
     <!--topbar-->
     <div class="lt_topbar">
-        <a href="javascript:;" class="pull-left icon_menu">
-            <span class="glyphicon glyphicon-align-justify"></span>
-        </a>
-        <a href="javascript:;" class="pull-right icon_logout">
-            <span class="glyphicon glyphicon-log-out"></span>
-        </a>
+        <a href="javascript:;" class="pull-left icon_menu"><span class="glyphicon glyphicon-align-justify"></span></a>
+        <a href="javascript:;" class="pull-right icon_logout"><span class="glyphicon glyphicon-log-out"></span></a>
     </div>
 
 
@@ -63,16 +60,19 @@
         <!--面包屑导航-->
         <ol class="breadcrumb">
             <li><a href="#">管理系统</a></li>
-            <li class="active">首页</li>
+            <li><a href="#">分类管理</a></li>
+            <li class="active">二级分类</li>
         </ol>
 
+
         <!--内容区域-->
-        <div class="lt_content">
-            <div class="pic_left pull-left"></div>
-            <div class="pic_right pull-right"></div>
-        </div>
+        <div class="lt_content"></div>
     </div>
+
 </div>
+
+
+<!--role  aria   sr-only:  可以删掉-->
 <div class="modal fade" tabindex="-1" id="logoutModal">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -93,12 +93,12 @@
         </div>
     </div>
 </div>
-</body>
+
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
 <script src="lib/nprogress/nprogress.js"></script>
-<script src="lib/echarts/echarts.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
+</body>
 </html>
