@@ -25,7 +25,7 @@ $(function () {
         };
         myChart.setOption(option);
 var myChart1 = echarts.init(document.querySelector(".pic_right"));
-    option1 = {
+    var option1 = {
         title : {
             text: '热门品牌销售',
             subtext: '2017年6月',
